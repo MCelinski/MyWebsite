@@ -1,0 +1,95 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+/*style dla nagłówka*/
+.header {
+    background-color: black;
+}
+/*style dla paska nawigacji */
+.navbar {
+    text-align: center;
+    padding: 20px;
+}
+    /*style dla elemnetów ktwicy w pasku nawigacji  */
+    .navbar a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 30px;
+        font-family: 'Palanquin Dark', sans-serif;
+        margin-right: 80px;
+        border: 2px solid transparent;
+        padding: 10px;
+        transition: 0.3s;
+    }
+        /*style dla elemnetów ktwicy w pasku nawigacji gdy myszka jest na nim  */
+        .navbar a:hover {
+            background: #000000;
+            border: 2px solid #fff;
+        }
+
+
+/*style dla ramki gry  */
+.game {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+}
+/*style dla postaci kredka w grze  */
+#character {
+    width: 40px;
+    height: 50px;
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+/*styl animacji skoku w grze   */
+.animate {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 100px;
+    }
+
+    70% {
+        top: 100px;
+    }
+
+    100% {
+        top: 150px;
+    }
+}
+/*style dla przeszkody w grze  */
+#block {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 500px
+    }
+
+    100% {
+        left: -20px
+    }
+}
+
+
